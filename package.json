@@ -1,0 +1,17 @@
+{
+  "name": "siam-registration-assistant-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:server\" \"vite\"",
+    "server": "node backend/index.js",
+    "build": "vite build",
+    "start": "node backend/index.js",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.12"
+  },
+  "engines": { "node": ">=24" }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T18:07:38Z",
+  "title": "Design System: Siam Registration Assistant v2",
+  "extensions": {
+    "colorMeta": {
+      "navy": { "role": "primary", "displayName": "Registrar Navy", "canonical": "#183b56" },
+      "canvas": { "role": "neutral", "displayName": "Work Canvas", "canonical": "#f4f6f5" },
+      "paper": { "role": "neutral", "displayName": "Service Paper", "canonical": "#ffffff" }
+    },
+    "motion": [
+      { "name": "state-change", "value": "160ms ease", "purpose": "Hover and focus color changes only." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "800px" },
+      { "name": "phone", "value": "560px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action on a task surface.",
+      "html": "<button class=\"primary\">ส่ง</button>",
+      "css": ".primary{min-height:40px;padding:9px 15px;border:1px solid #183b56;border-radius:6px;background:#183b56;color:#fff;font-weight:700}"
+    },
+    {
+      "name": "Quick Question",
+      "kind": "chip",
+      "description": "One-click question in the chat composer.",
+      "html": "<button class=\"quick-question\">วิธีเพิ่มรายวิชา</button>",
+      "css": ".quick-question{min-height:32px;padding:5px 10px;border:1px solid #b9c8ce;border-radius:5px;background:#f9fbfb;color:#183b56}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Registrar Desk",
+    "overview": "An orderly service counter translated into a task interface: clear labels, dependable spacing, and immediate feedback.",
+    "keyCharacteristics": ["institutional clarity", "restrained navy", "record-like rows"],
+    "rules": [
+      { "name": "The One Accent Rule", "section": "Colors", "body": "A saturated color communicates an action, selection, or state." }
+    ],
+    "dos": ["Label simulated answers and registration actions as demo data.", "Keep chat, queue, ticket, and staff states visible in plain language."],
+    "donts": ["Add decorative gradients, fake metrics, emoji icons, or nested cards."]
+  }
+}
